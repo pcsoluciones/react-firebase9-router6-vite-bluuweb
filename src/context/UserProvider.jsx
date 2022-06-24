@@ -20,7 +20,7 @@ const UserProvider = (props) => {
             }
         })
         return () => unsubscribe()
-    })
+    },[])
 
     const registerUser = (email, password) => createUserWithEmailAndPassword(auth, email, password )
 
